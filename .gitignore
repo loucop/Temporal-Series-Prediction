@@ -1,0 +1,15 @@
+# Ambiente Virtual
+venv/
+
+# Arquivos de Cache do Python
+__pycache__/
+*.pyc
+
+# Arquivos de IDE (ex: VS Code)
+.vscode/
+
+# Arquivos gerados pelo pipeline (opcional, mas recomendado)
+# Mantém o repositório focado no código-fonte.
+data/
+models/
+reports/
