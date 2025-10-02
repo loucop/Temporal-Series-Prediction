@@ -5,9 +5,5 @@ venv/
 __pycache__/
 *.pyc
 
-# Arquivos de IDE (ex: VS Code)
-.vscode/
-
-# Arquivos gerados pelo pipeline (opcional, mas recomendado)
-# Mantém o repositório focado no código-fonte.
-
+# Arquivos gerados pelo pipeline
+reports/
