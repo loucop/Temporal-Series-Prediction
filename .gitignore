@@ -10,6 +10,4 @@ __pycache__/
 
 # Arquivos gerados pelo pipeline (opcional, mas recomendado)
 # Mantém o repositório focado no código-fonte.
-data/
-models/
-reports/
+
