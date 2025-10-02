@@ -2,7 +2,7 @@
 
 Este repositório contém um pipeline completo e automatizado de Machine Learning para previsão de séries temporais. O projeto foi desenvolvido como um estudo de caso prático, abordando desde a geração de dados sintéticos complexos até a implementação de estratégias de modelagem avançadas, avaliação honesta e detecção de vazamento de dados (data leakage).
 
-## 🚀 Principais Características
+## Principais Características
 
 * **Pipeline Automatizado:** Execução de todo o fluxo (ETL, Feature Engineering, Treinamento, Avaliação) com um único comando.
 * **Engenharia de Features Avançada:** Criação de features de lag, médias móveis, componentes de data (`dia_da_semana`, `mes`) e índice de tempo para capturar múltiplos padrões.
@@ -12,7 +12,7 @@ Este repositório contém um pipeline completo e automatizado de Machine Learnin
 * **Código Modular e Configurável:** O projeto é organizado em módulos com responsabilidades únicas e utiliza um arquivo `config.py` centralizado, facilitando a manutenção e a experimentação.
 * **Pronto para Docker:** Inclui um `Dockerfile` e `.dockerignore` para fácil portabilidade e execução em qualquer ambiente.
 
-## 📂 Estrutura do Projeto
+## Estrutura do Projeto
 
 O repositório está organizado da seguinte forma para garantir a separação de responsabilidades:
 
@@ -43,7 +43,6 @@ Siga os passos abaixo para configurar e executar o pipeline na sua máquina loca
 
 * [Python 3.9+](https://www.python.org/downloads/)
 * [Git](https://git-scm.com/downloads/)
-* [Docker Desktop](https://www.docker.com/products/docker-desktop/) (Opcional, para execução via contêiner)
 
 ### Instalação
 
@@ -84,10 +83,6 @@ Siga os passos abaixo para configurar e executar o pipeline na sua máquina loca
     ```
 
     Ao final da execução, os modelos treinados estarão na pasta `models/` e o gráfico de previsão estará em `reports/`.
-
-## 💡 Conceitos e Aprendizados
-
-Este projeto foi uma jornada prática através de conceitos cruciais em previsão com Machine Learning:
 
 * **Limitações dos Modelos:** Demonstrou-se na prática a incapacidade de modelos de árvore (Random Forest) de extrapolar tendências e a necessidade de features específicas como o `time_index`.
 * **Detecção de Data Leakage:** A busca por um R² realista nos forçou a identificar e corrigir múltiplas formas de vazamento de dados, desde o cálculo da média móvel até o uso de features com conhecimento futuro.
